@@ -1,18 +1,21 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Composition />
+    <div>{{ `x坐标：${x},y坐标:${y}` }}</div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Composition from './components/Composition'
+import { useMousePosition } from './tools/test'
 export default {
-  name: 'App',
   components: {
-    HelloWorld
-  }
+    Composition,
+  },
+  setup() {
+    const { x, y } = useMousePosition()
+    return { x, y }
+  },
 }
 </script>
 
