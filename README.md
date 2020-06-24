@@ -1,24 +1,7 @@
 # vue3-test
 
-## Project setup
-```
-npm install
-```
+## vue3.x的初步练习
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+在components中，Composition.vue中初步练习了组合式API
+Selected2.vue是用vue2.x语法写的一道面试题
+Selected3.vue是用vue3.x改版的这道面试题
